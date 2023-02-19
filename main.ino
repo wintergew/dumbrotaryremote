@@ -15,7 +15,7 @@ EncoderButton eb1(D7, D6, D5);
 int brightness=100; //default brightness
 int temp=3000;      //default temp
 bool mode=true;     //default mode true=brightness false=temp
-char buffer[40];    //char to store the command
+char buffer[70];    //char to store the command
 
 //Commands
 const char* toggle="{\"id\":1,\"method\":\"toggle\",\"params\":[]}";
