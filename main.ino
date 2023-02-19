@@ -48,7 +48,7 @@ void onEb1Click(EncoderButton& eb){
   sendLightCommand(toggle);
 }
 
-void onEb1LongClick(EncoderButton& eb){
+void onEb1LongPress(EncoderButton& eb){
   mode = !mode;
   digitalWrite(ledPin, mode);
 }
@@ -59,7 +59,7 @@ void setup() {
   eb1.setRateLimit(100);
   eb1.setEncoderHandler(onEb1Encoder);
   eb1.setClickHandler(onEb1Click);
-  eb1.setLongClickHandler(onEb1LongClick);
+  eb1.setLongPressHandler(onEb1LongPress);
 
   //Connect to wifi
   WiFi.mode(WIFI_STA);
